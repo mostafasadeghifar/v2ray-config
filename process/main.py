@@ -38,10 +38,10 @@ with open("/var/www/python/v2ray-config/config_file.txt",'wb') as f:
 #     # to a new file in binary mode.
 #     t.write(r2.content)
 
-# f = open("../file22.txt", "a")
-# f.write(str(randrange(0, 10))+"\n")
-# # f.write(os.path.abspath(".."))
-# f.close()
+f = open("/var/www/python/v2ray-config/config_file.txt", "a")
+f.write(str(randrange(0, 10))+"\n")
+# f.write(os.path.abspath(".."))
+f.close()
 repo = git.Repo("/var/www/python/v2ray-config")
 config = '/var/www/python/v2ray-config/config_file.txt'
 # file22 = 'file22.txt'
