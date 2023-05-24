@@ -17,7 +17,7 @@ r1 = requests.get(file1) # create HTTP response object
 # r2 = requests.get(file2)
 # send a HTTP request to the server and save
 # the HTTP response in a response object called r
-with open("../config.txt",'wb') as f:
+with open("../config_file.txt",'wb') as f:
   
     # Saving received content as a png file in
     # binary format
@@ -40,12 +40,12 @@ with open("../config.txt",'wb') as f:
 # # f.write(os.path.abspath(".."))
 # f.close()
 repo = git.Repo(os.path.abspath(".."))
-config = 'config.txt'
+config = 'config_file.txt'
 # file22 = 'file22.txt'
 
 repo.index.add([config])
 # repo.index.add([file2])
-repo.index.commit('added new config22')
+repo.index.commit('added new config')
 print('commit successfully')
 
 origin = repo.remote(name='origin')
