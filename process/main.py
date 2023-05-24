@@ -40,12 +40,12 @@ with open("../config_file.txt",'wb') as f:
 # # f.write(os.path.abspath(".."))
 # f.close()
 repo = git.Repo(os.path.abspath(".."))
-config = 'config_file.txt'
+config = '../config_file.txt'
 # file22 = 'file22.txt'
 
 repo.index.add([config])
 # repo.index.add([file2])
-repo.index.commit('added new config')
+repo.index.commit('added new configs')
 print('commit successfully')
 
 origin = repo.remote(name='origin')
