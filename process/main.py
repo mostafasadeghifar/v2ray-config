@@ -1,7 +1,7 @@
 
 # imported the requests library
 import requests
-# import git
+import git
 from git import Repo
 from random import randrange, uniform
 import os
