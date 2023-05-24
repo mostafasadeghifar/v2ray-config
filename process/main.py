@@ -45,7 +45,7 @@ file22 = 'file22.txt'
 
 repo.index.add([file12 , file22])
 # repo.index.add([file2])
-repo.index.commit('added new config22')
+repo.index.commit('addedsdf new config22')
 print('commit successfully')
 
 origin = repo.remote(name='origin')
