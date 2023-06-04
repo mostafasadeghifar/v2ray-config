@@ -1,4 +1,4 @@
-trojan://1@13.12--2023.06.04.time:1312#Package_Ended 
+trojan://1@13.22--2023.06.04.time:1322#Package_Ended 
 
 
 vless://7d3b945d-0f23-4719-9fae-50033251e2fd@KOSeMADAR-PUBLISHER.ddns.net:443?sni=q77gpucuontxt4hkbdg8.khodavakili.buzz&host=dl.khodavakili.buzz&type=ws&security=tls&path=%2Fkos_madar_publisher&encryption=none#server  1
