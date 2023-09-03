@@ -12,12 +12,11 @@ import os
 # f.write(os.path.abspath("..")+"\n")
 # f.close()
 
-file1 = "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/Sub1.txt"
-# file2 = "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/Sub2.txt"
+file1 = "https://raw.githubusercontent.com/AzadNetCH/Clash/main/V2Ray.txt"
   
 # URL of the file to be downloaded is defined as file
 r1 = requests.get(file1) # create HTTP response object
-# r2 = requests.get(file2)
+
 # send a HTTP request to the server and save
 # the HTTP response in a response object called r
 with open("/var/www/python/v2ray-config/config_file.txt",'wb') as f:
