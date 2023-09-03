@@ -19,8 +19,9 @@ r1 = requests.get(file1) # create HTTP response object
 
 # send a HTTP request to the server and save
 # the HTTP response in a response object called r j
-with open("/var/www/python/v2ray-config/config_file.txt",'wb') as f:
-  
+# with open("/var/www/python/v2ray-config/config_file.txt",'wb') as f:
+with open("../config_file.txt",'wb') as f:
+
     # Saving received content as a png file in
     # binary format
   
@@ -37,22 +38,22 @@ with open("/var/www/python/v2ray-config/config_file.txt",'wb') as f:
 #     # to a new file in binary mode.
 #     t.write(r2.content)
 
-f = open("/var/www/python/v2ray-config/config_file.txt", "a")
+f = open("../config_file.txt", "a")
 f.write(str(randrange(0, 10))+"\n")
 # f.write(os.path.abspath(".."))
 f.close()
-repo = git.Repo("/var/www/python/v2ray-config")
-config = '/var/www/python/v2ray-config/config_file.txt'
-# file22 = 'file22.txt'
+# repo = git.Repo("/var/www/python/v2ray-config")
+# config = '/var/www/python/v2ray-config/config_file.txt'
+# # file22 = 'file22.txt'
 
-repo.index.add([config])
-# repo.index.add([file2])
-repo.index.commit('added new configss')
-print('commit successfully')
+# repo.index.add([config])
+# # repo.index.add([file2])
+# repo.index.commit('added new configss')
+# print('commit successfully')
 
-origin = repo.remote(name='origin')
-existing_branch = repo.heads['main']
-existing_branch.checkout()
+# origin = repo.remote(name='origin')
+# existing_branch = repo.heads['main']
+# existing_branch.checkout()
 
-origin.push()
-print('push sucessfully')
+# origin.push()
+# print('push sucessfully')
