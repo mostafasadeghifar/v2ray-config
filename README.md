@@ -1,5 +1,8 @@
 # v2ray-config
 
+### This is learning project and just develop for practice with programming languages
+
+
 ### Features
 
 - This repo provides you with new v2ray configs
