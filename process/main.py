@@ -18,7 +18,7 @@ file1 = "https://raw.githubusercontent.com/AzadNetCH/Clash/main/V2Ray.txt"
 r1 = requests.get(file1) # create HTTP response object
 
 # send a HTTP request to the server and save
-# the HTTP response in a response object called r
+# the HTTP response in a response object called r j
 with open("/var/www/python/v2ray-config/config_file.txt",'wb') as f:
   
     # Saving received content as a png file in
