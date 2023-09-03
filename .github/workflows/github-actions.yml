@@ -1,0 +1,7 @@
+name: Github action demo
+on: [push]
+jobs:
+       Explore-GitHub-Action:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "the job automaticaly trigged"
