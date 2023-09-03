@@ -5,8 +5,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - run: echo "the job automaticaly trigged"
-            - name: Check
-              uses: actions
             - run: echo "${{github.repository}}" represent
             - name: Check
               run:  ls ${{github.workspace}}
