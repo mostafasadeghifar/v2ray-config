@@ -1,4 +1,4 @@
-name: Github action demo
+name: Github action dem testing
 on:
     schedule:
         - cron: "* * * * *"
