@@ -1,17 +1,21 @@
-name: Github action dem testing
+name:
+    First Cron Job
+   
+    # Controls when the workflow will run
 on:
+    # Triggers the workflow every 5 minutes
     schedule:
-        - cron: "* * * * *"
+      - cron: "*/5 * * * *"
+   
+        # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-    report:
-       runs-on: ubuntu-latest
-       steps:
-        - name: Creates file config
-          run: touch file.txt
-        - name: Commit database
-          run: |
-           git config --global user.name mostafasadeghifar
-           git config --global user.email msadeghifar1996@gmail.com
-           git add .
-           git commit -am "file changed"
-           git push
+    # This workflow contains a single job called "cron"
+    cron:
+      # The type of runner that the job will run on
+      runs-on: ubuntu-latest
+   
+      # Steps represent a sequence of tasks that will be executed as part of the job
+      steps:
+        # Runs a single command using the runners shell
+        - name: Run a one-line script
+          run: echo Hello, world!
