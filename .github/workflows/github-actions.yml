@@ -2,10 +2,10 @@ name:
     First Cron Jobs
    
     # Controls when the workflow will run
-on:
+on: [push]
     # Triggers the workflow every 5 minutes
-    schedule:
-      - cron: "*/5 * * * *"
+    # schedule:
+    #   - cron: "*/5 * * * *"
 
    
         # A workflow run is made up of one or more jobs that can run sequentially or in parallel
