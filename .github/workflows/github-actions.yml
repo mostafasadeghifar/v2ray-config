@@ -8,7 +8,7 @@ on: [push]
     #   - cron: "*/5 * * * *"
 
    
-        # A workflow run is made up of one or more jobs that can run sequentially or in parallel
+        # A workflow run is made up of one or more jobs that can run sequentially or in parallel sdfs
 jobs:
     # This workflow contains a single job called "cron"
     crons:
